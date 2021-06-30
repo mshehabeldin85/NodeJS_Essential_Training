@@ -1,6 +1,5 @@
 const path = require("path");
-const util = require("util");
+const { log } = require("util");
+const { getHeapCodeStatistics } = require("v8");
 
-util.log(path.basename(__filename));
-
-util.log(" ^ The name of the current file");
+log(getHeapCodeStatistics());
