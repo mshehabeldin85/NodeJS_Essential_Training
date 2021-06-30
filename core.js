@@ -1,5 +1,6 @@
 const path = require("path");
+const util = require("util");
 
-const dirUploads = path.join(__dirname, "www", "files", "uploads");
+util.log(path.basename(__filename));
 
-console.log(dirUploads);
+util.log(" ^ The name of the current file");
